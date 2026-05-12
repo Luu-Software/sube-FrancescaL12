@@ -11,44 +11,42 @@ Distancia	  | Con SUBE registrada   | Con SUBE sin registrar
 boton.addEventListener("click", () => {
   let registradaValor = registrada.value;
   let distanciaValor = Number(distancia.value);
-  
+
   let precio = 0;
-  
+
   if (distanciaValor <= 3) {
+
     if (registradaValor === "si") {
-      precio = 100;
+      precio = 715.24;
     } else {
-      precio = 120;
+      precio = 1137.23;
     }
-  
+
   } else if (distanciaValor <= 6) {
+
     if (registradaValor === "si") {
-      precio = 120;
+      precio = 794.74;
     } else {
-      precio = 150;
+      precio = 1263.64;
     }
-  
+
   } else if (distanciaValor <= 12) {
+
     if (registradaValor === "si") {
-      precio = 150;
+      precio = 855.97;
     } else {
-      precio = 180;
+      precio = 1360.99;
     }
-  
+
   } else if (distanciaValor <= 27) {
+
     if (registradaValor === "si") {
-      precio = 180;
+      precio = 917.24;
     } else {
-      precio = 220;
+      precio = 1458.41;
     }
-  
-  } else {
-    if (registradaValor === "si") {
-      precio = 220;
-    } else {
-      precio = 260;
-    }
+
   }
-  
+
   tarifa.innerText = "El valor del boleto es: $" + precio;
 });
